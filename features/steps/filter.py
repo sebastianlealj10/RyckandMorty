@@ -6,7 +6,6 @@ import json
 def step_impl(context, name):
     context.name = name
     context.endpoint = context.endpoint + "?name=" + name
-    print(context.endpoint)
 
 
 @then('the response content is correct')
